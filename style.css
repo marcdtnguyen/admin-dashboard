@@ -1,5 +1,30 @@
+--root {
+    --main-color: #1892d4;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 200px 1fr;
+}
+
+.sidebar {
+    background-color: var(--main-color);
+    grid-row: span 2;
+}
+
+.header {
+    background-color: white;
+}
+
+.main {
+    background-color: #e2e8f0;
 }
