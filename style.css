@@ -1,4 +1,5 @@
---root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root {
     --main-color: #1892d4;
 }
 
@@ -6,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -19,7 +21,46 @@
 .sidebar {
     background-color: var(--main-color);
     grid-row: span 2;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 40px;
+    padding: 0;
 }
+
+.user-tab,
+.util-tab {
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+svg {
+    width: 2.5rem;
+    fill: white;
+    margin-right: 10px;
+}
+
+.user-tab svg,
+.util-tab svg {
+    width: 1.2rem;
+    margin-right: 20px;
+}
+.user-tab a,
+.util-tab a {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 1rem;
+} 
 
 .header {
     background-color: white;
